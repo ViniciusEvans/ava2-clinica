@@ -29,6 +29,7 @@ const appointmentController = {
       res.status(201).json(appointment);
   
     } catch (err) {
+      console.log(err);
       res.status(500).json({ message: "Error creating appointment" });
     }
   },
