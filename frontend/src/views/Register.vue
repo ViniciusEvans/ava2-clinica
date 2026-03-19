@@ -41,7 +41,7 @@ export default {
   methods: {
     async register() {
       try {
-        await axios.post("http://localhost:5000/api/register", {
+        await axios.post("https://ava2-backend.vercel.app/api/register", {
           name: this.name,
           email: this.email,
           password: this.password,

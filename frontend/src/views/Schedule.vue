@@ -26,7 +26,7 @@ export default {
       try {
         const token = localStorage.getItem("token");
         await axios.post(
-          "http://localhost:5000/api/appointments",
+          "https://ava2-backend.vercel.app/api/appointments",
           { date: this.date, time: this.time, cep: this.cep },
           { headers: { Authorization: `Bearer ${token}` } },
         );

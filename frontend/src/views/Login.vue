@@ -35,10 +35,13 @@ export default {
   methods: {
     async login() {
       try {
-        const res = await axios.post("http://localhost:5000/api/login", {
-          email: this.email,
-          password: this.password,
-        });
+        const res = await axios.post(
+          "https://ava2-backend.vercel.app/api/login",
+          {
+            email: this.email,
+            password: this.password,
+          },
+        );
         localStorage.setItem("token", res.data.token);
         this.$router.push("/dashboard");
       } catch (err) {

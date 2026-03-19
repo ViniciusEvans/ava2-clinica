@@ -23,9 +23,12 @@ export default {
   },
   async mounted() {
     const token = localStorage.getItem("token");
-    const res = await axios.get("http://localhost:5000/api/appointments", {
-      headers: { Authorization: `Bearer ${token}` },
-    });
+    const res = await axios.get(
+      "https://ava2-backend.vercel.app/api/appointments",
+      {
+        headers: { Authorization: `Bearer ${token}` },
+      },
+    );
     this.appointments = res.data;
   },
 };
