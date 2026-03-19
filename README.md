@@ -35,8 +35,8 @@ Este é um sistema web para gerenciamento de agendamentos em clínicas médicas,
 
 ## Uso
 
-- Acesse o frontend em http://localhost:8080
-- O backend roda em http://localhost:5000
+- Acesse o frontend em hava2-frontend.vercel.app
+- O backend roda em https://ava2-backend.vercel.app/api/{rota}
 - Registre-se como paciente ou secretário
 - Faça login
 - Agende consultas (com CEP para endereço e alerta de clima)
